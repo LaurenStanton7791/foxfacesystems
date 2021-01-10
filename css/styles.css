@@ -7,9 +7,6 @@
     color: black;
     background-color: white;
     box-sizing: border-box;
-  
- 
-   
   }
   * p {
     line-height: 1.45em;
@@ -33,11 +30,7 @@
       rgba(0, 153, 255, 0.75)
     ),url(../images/apartment2.jpg);
     background-size: cover;
-    
-  }
-
-  .wrapper {
-    align-items: center;
+    text-align: -webkit-center; 
   }
 
 
@@ -84,12 +77,16 @@
     text-align: center;
   }
 
+  .background {
+    justify-content: center;
+  }
+
   form {
     border:  #FFC845 solid 2px;
     text-align: center;
     width: max-content;
     color: white; 
-    padding: 50px 40px; 
+    padding: 20px 20px; 
     flex-basis: 100%;
     -webkit-box-shadow:0 0 4px rgba(255, 200, 69, 0.6);
     -moz-box-shadow:0 4px rgba(255,200,69,0.6);
@@ -97,15 +94,15 @@
 }
 
 .form-title {
-  color: white;
-  font-size: 20px; 
-}
+    color: white;
+    font-size: 20px; 
+  }
 
   .tag {
     padding: 10px;
     margin: 20px 20px;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     width: max-content;
   } 
   .location {
@@ -212,7 +209,6 @@
   .img-logo { 
     margin-left: auto;
     margin-right: auto;
-    height: 50px; 
   }
   
   /* ============================================= */
@@ -227,10 +223,8 @@
   /*              Media Queries                    */
   /* ============================================= */
   @media screen and (min-width: 768px) {
-  .main-header {
-    text-align: left;
-  }
-  .flex {
+
+ .flex {
    /* TWEENER - IE 10 */
     display: flex;
     max-width: 1500px;
@@ -239,12 +233,10 @@
     justify-content: center;
   }
 
-  .tag {
-    font-size: 60px;
-    width: max-content;
-  } 
-  .location {
-    font-size: 20px;
+ .img-logo { 
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px; 
   }
   
 
@@ -277,10 +269,6 @@
 .main-nav li 
  {
   display: inline-block;
-}
-
-.main-nav {
-  float: right; 
 }
 
 .name li {
@@ -321,3 +309,23 @@
     }
   
   }
+
+  @media screen and (min-width: 1024px) {
+
+    .main-header {
+      text-align: left;
+    }
+
+  .main-nav {
+    float: right; 
+  }
+
+  .tag {
+    font-size: 60px;
+    width: max-content;
+  } 
+  .location {
+    font-size: 20px;
+  }
+
+}

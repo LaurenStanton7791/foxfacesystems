@@ -31,7 +31,6 @@
       rgba(0, 59, 99, 0.95), 
       rgba(0, 153, 255, 0.75)
     ),url(../images/apartment2.jpg);
-    opacity: 1;
     background-size: cover;
     
   }
@@ -79,26 +78,37 @@
   .main-header {
     text-align: center;
   }
-
+.wrapper {
+  justify-content: center;
+}
   form {
     border:  #FFC845 solid 2px;
+    text-align: center;
+    width: max-content;
     color: white; 
-    padding: 80px 40px; 
+    padding: 50px 40px; 
     flex-basis: 100%;
-    -webkit-box-shadow:0 0 3px rgba(255, 200, 69, 0.6);
-    -moz-box-shadow:0 3px rgba(255,200,69,0.6);
-    box-shadow:0 0 3px rgba(255,200,69,0.6);
+    -webkit-box-shadow:0 0 4px rgba(255, 200, 69, 0.6);
+    -moz-box-shadow:0 4px rgba(255,200,69,0.6);
+    box-shadow:0 0 4px rgba(255,200,69,0.6);
+}
 
-  }
+.form-title {
+  color: white;
+  font-size: 20px; 
+}
+
   .tag {
     padding: 10px;
-    font-size: 65px;
     margin: 20px 20px;
     color: white;
+    font-size: 60px;
+    width: max-content;
   } 
   .location {
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 400;
   
   }
   
@@ -136,10 +146,10 @@
     max-width: 500px;
     text-align: right;
     background-color: white;
-    color: midnightblue;
+    color: #00A3E0;
     border-bottom: 8px solid #3F4443;
     border-radius: 45px;
-    -webkit-box-shadow:0 0 7px rgba(0,0,0,0.6);
+    -webkit-box-shadow:0 0 7px rgba(0, 0, 0, 0.6);
     -moz-box-shadow:0 0 7px rgba(0,0,0,0.6);
     box-shadow:0 0 7px rgba(0,0,0,0.6);
 
@@ -223,7 +233,13 @@
     margin: 0 auto;
     justify-content: center;
   }
-   
+
+  section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
 	.wrap {
     min-height: calc(100vh - 100px);
   }

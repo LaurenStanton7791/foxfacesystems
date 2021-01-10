@@ -43,18 +43,23 @@
     text-transform: uppercase;
   }
   
-  .name,
-  .main-nav li {
+  .name {
     text-align: center;
     color: black;
     margin-top: 6px;
     margin-bottom: 6px;
   }
-  
+
   .main-nav a {
-    font-size: 1em;
-    color: black;
+    text-align: center;
+    background-color: #00A3E0;
+    color: white;
+    border-radius: 35px; 
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 1em; 
   }
+  
   
   .main-nav a:hover {
     color:#84BD00;
@@ -270,6 +275,16 @@
  {
   display: inline-block;
 }
+
+.main-nav a {
+  color: black; 
+  background-color: white;
+  border-radius: 35px; 
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 1em; 
+}
+
 
 .name li {
   width: 240px;

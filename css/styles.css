@@ -39,15 +39,7 @@
   /*              Typography                       */
   /* ============================================= */
   .name {
-    font-size: 2.5em;
     text-transform: uppercase;
-  }
-  
-  .name {
-    text-align: center;
-    color: black;
-    margin-top: 6px;
-    margin-bottom: 6px;
   }
 
   .main-nav a {
@@ -62,14 +54,14 @@
   
   
   .main-nav a:hover {
-    color:#84BD00;
+    color: #FFC845;
   }
   
   .name a,
   .main-nav a {
     padding: 5px 25px;
     display: block;
-    text-transform: uppercase;
+    text-align: center;
   }
 
   .container {
@@ -80,6 +72,7 @@
   
   .main-header {
     text-align: center;
+    margin: 0 auto; 
   }
 
   .background {
@@ -107,8 +100,7 @@
     padding: 10px;
     margin: 20px 20px;
     color: white;
-    font-size: 30px;
-    width: max-content;
+    font-size: 40px;
   } 
   .location {
     padding: 10px;
@@ -152,8 +144,8 @@
     padding: 25px 40px 40px;
     max-width: 500px;
     text-align: right;
-    background-color: white;
-    color: #00A3E0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-bottom: 8px solid #3F4443;
     border-radius: 45px;
     -webkit-box-shadow:0 0 7px rgba(0, 0, 0, 0.6);
@@ -168,11 +160,11 @@
 
   .card-info {
     font-size: 16px; 
-    color: black;
+    color: rgb(0, 0, 0);
   }
 
   p a {
-    color: black;
+    color: rgb(0, 0, 0);
   }
   p a:hover {
     color:#84BD00;
@@ -238,13 +230,10 @@
     justify-content: center;
   }
 
- .img-logo { 
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px; 
+  .container {
+    display: inline;
   }
   
-
   section {
       position: absolute;
       top: 50%;
@@ -252,7 +241,7 @@
       transform: translate(-50%, -50%);
   }
 	.wrap {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 250px);
   }
   
   .wrap img {
@@ -264,26 +253,12 @@
     display: inline-flex;
     font-family: 'Montserrat', sans-serif;
   }
-	.container {
-		width: 100%;
-
-    margin: 0 auto;
-  }
   
-.name,
-.main-nav li 
- {
-  display: inline-block;
-}
-
-.main-nav a {
-  color: black; 
-  background-color: white;
-  border-radius: 35px; 
-  margin-top: 6px;
-  margin-bottom: 6px;
-  font-size: 1em; 
-}
+  .name,
+  .main-nav li 
+  {
+    display: inline-block;
+  }
 
 
 .name li {
@@ -293,7 +268,7 @@
 .img-logo {
   display: block;
   float: left;
-  height: 50px;
+  height: 40px;
 }
 
   [class^=col] {
@@ -327,12 +302,14 @@
 
   @media screen and (min-width: 1024px) {
 
-    .main-header {
-      text-align: left;
-    }
+  .main-header {
+    text-align: left;
+    
+}
 
   .main-nav {
     float: right; 
+    padding-top: 20px;
   }
 
   .tag {
@@ -342,5 +319,15 @@
   .location {
     font-size: 20px;
   }
+
+  .main-nav a {
+    color: black; 
+    background-color: white;
+    border-radius: 35px; 
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 1em; 
+}
+
 
 }

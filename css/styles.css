@@ -4,9 +4,9 @@
   /* ============================================= */
   body {
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: white;
-    box-sizing: border-box;
+
   }
   * p {
     line-height: 1.45em;
@@ -24,13 +24,16 @@
     text-transform: uppercase;
   }
 
+  .background {
+    text-align: center;
+  }
+
   .wrap  {
     background-image: linear-gradient(65deg,
-      rgba(0, 59, 99, 0.95), 
-      rgba(0, 153, 255, 0.75)
-    ),url(../images/apartment2.jpg);
+      rgba(0, 59, 99, 0.753), 
+      rgba(0, 110, 184, 0.904)
+    ),url(../images/pexels-sevenstorm-juhaszimrus-981916.jpg);
     background-size: cover;
-    text-align: -webkit-center; 
   }
 
 
@@ -40,6 +43,7 @@
   /* ============================================= */
   .name {
     text-transform: uppercase;
+    color: black;
   }
 
   .main-nav a {
@@ -75,37 +79,25 @@
     margin: 0 auto; 
   }
 
-  .background {
-    justify-content: center;
-  }
-
   form {
     border:  #FFC845 solid 2px;
     text-align: center;
-    width: max-content;
-    color: white; 
     padding: 20px 20px; 
-    flex-basis: 100%;
-    -webkit-box-shadow:0 0 4px rgba(255, 200, 69, 0.6);
-    -moz-box-shadow:0 4px rgba(255,200,69,0.6);
-    box-shadow:0 0 4px rgba(255,200,69,0.6);
-}
+  }
 
-.form-title {
-    color: white;
+  .form-title {
     font-size: 20px; 
   }
 
   .tag {
     padding: 10px;
     margin: 20px 20px;
-    color: white;
     font-size: 40px;
   } 
-  .location {
+
+  .phrase {
     padding: 10px;
     font-size: 10px;
-    font-weight: 400;
   }
   
   footer {
@@ -177,26 +169,46 @@
     
   }*/
 
- a.social {
-    display: inline-block;
+  .media {
+    display: inline-flex;
+  }
+
+  .fa {
+    background: #125688;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 10px; 
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: none;
+    padding: 10px 10px; 
+  }
+
+.fa:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+
+a.linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+a.social {
+    display: inline-flex;
     text-indent: -9999px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    transition: all .5s;
-  }
-  a.twitter {
-    background-image: url(images/twitter.svg);
-  }
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
+}
+
   a.linkedin {
     background-image: url(../images/linkedin.svg);
   }
-  a.github {
-    background-image: url(images/github.svg);
-  }
+
   a.social:hover {
-    opacity: 1;
+    transform: scale(1.2, 1.2);
   }
   
   /* ============================================= */
@@ -225,7 +237,6 @@
    /* TWEENER - IE 10 */
     display: flex;
     max-width: 1500px;
-    justify-content: space-around;
     margin: 0 auto;
     justify-content: center;
   }
@@ -236,7 +247,7 @@
   
   section {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
@@ -290,6 +301,10 @@
   main p {
       line-height: 1.6em;
     }
+
+    form {
+      width: max-content;
+    }
   
   footer {
       text-align: center;
@@ -307,6 +322,8 @@
     
 }
 
+
+
   .main-nav {
     float: right; 
     padding-top: 20px;
@@ -316,6 +333,10 @@
     font-size: 60px;
     width: max-content;
   } 
+
+  .phrase {
+    font-size: 16px;
+  }
   .location {
     font-size: 20px;
   }
@@ -328,6 +349,4 @@
     margin-bottom: 6px;
     font-size: 1em; 
 }
-
-
 }

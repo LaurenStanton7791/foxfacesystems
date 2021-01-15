@@ -1,9 +1,20 @@
 body {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#3F4443; 
+    color: white; 
 }
 img {
-    height: 500px;
-   text-align: center;
+    height: 500px; 
+    display: block;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+    border: solid 3px rgb(110, 110, 110);
+    padding: 5px 5px;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 .card {
     flex-basis: 100%;
@@ -12,32 +23,31 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 10px;
-    font-size: 1.5em; 
+    font-size: 1em; 
     padding: 25px 40px 40px;
     max-width: 500px;
     text-align: right;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #00A3E0;
+    color: white;
     border-bottom: 8px solid #3F4443;
     border-radius: 45px;
     -webkit-box-shadow:0 0 7px rgba(0, 0, 0, 0.6);
     -moz-box-shadow:0 0 7px rgba(0,0,0,0.6);
     box-shadow:0 0 7px rgba(0,0,0,0.6);
-
-  
-  }
+}
   .card:hover {
-    border-color: #00A3E0;
+    border-color: #84BD00;
   }
 
   .card-info {
     font-size: 16px; 
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 
   @media screen and (min-width: 768px) {
   .flex {
     /* TWEENER - IE 10 */
+    padding-top: 200px; 
      display: inline-flex;
      max-width: 1500px;
      margin: 0 auto;

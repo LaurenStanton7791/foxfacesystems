@@ -7,10 +7,11 @@ body {
 img {
     height: 500px; 
     display: block;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto; 
     box-shadow: 3px 3px 10px rgb(0, 0, 0);
     border: solid 3px rgb(110, 110, 110);
-    padding: 5px 5px;
+    padding: 10px 10px;
 }
 
 h1 {
@@ -27,16 +28,16 @@ h1 {
     padding: 25px 40px 40px;
     max-width: 500px;
     text-align: right;
-    background-color: #00A3E0;
+    background: linear-gradient(-45deg, #00A3E0 60%, #84BD00);
     color: white;
-    border-bottom: 8px solid #3F4443;
+    border-bottom: 8px solid #000000;
     border-radius: 45px;
     -webkit-box-shadow:0 0 7px rgba(0, 0, 0, 0.6);
     -moz-box-shadow:0 0 7px rgba(0,0,0,0.6);
     box-shadow:0 0 7px rgba(0,0,0,0.6);
 }
   .card:hover {
-    border-color: #84BD00;
+    border-color:  #FFC845;
   }
 
   .card-info {

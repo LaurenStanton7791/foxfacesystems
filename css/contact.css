@@ -5,7 +5,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(0, 0, 0); 
-    background-color: rgb(255, 255, 255);
+    background-color: white; 
     margin: 0 auto; 
     text-align: center; 
  }
@@ -52,7 +52,10 @@ p {
     font-size: 1em;
     color: rgb(0, 0, 0);
 }
-
+li {
+    list-style: none;
+    padding: 10px 10px; 
+}
 label {
     color: white; 
 }
@@ -86,10 +89,10 @@ fieldset {
 
 .line {
     width: 95%;
-    color:#00A3E0; 
-    
 }
-
+.newsletter {
+    color: white;
+}
 .lastline {
     width: 95%;
     border: solid 1px white;
@@ -145,9 +148,7 @@ textarea {
  
 ::placeholder {
     text-align: right;
-    font-style: italic;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     color: gray;
 }
 

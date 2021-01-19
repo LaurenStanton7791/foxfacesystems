@@ -7,7 +7,7 @@ body {
     color: rgb(0, 0, 0); 
     margin: 0 auto; 
     text-align: center; 
- }
+}
 
 header {
     background-color: #3F4443; 
@@ -17,17 +17,21 @@ header {
     text-align: center; 
     font-size: 2.5em; 
 }
+
     
 .headline {
     text-align: center; 
     color: rgb(0, 0, 0);
     margin-bottom: 15px;
 }
-
 form {
     background-color: #3F4443;
     text-align: left;
     box-shadow: 10px 12px 0.5rem rgba(0,0,0,0.5);
+}
+
+img {
+    height: 500px; 
 }
 
 h2 {

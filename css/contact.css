@@ -5,7 +5,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(0, 0, 0); 
-    background-color: white; 
     margin: 0 auto; 
     text-align: center; 
  }
@@ -28,11 +27,13 @@ header {
 form {
     background-color: #3F4443;
     text-align: left;
+    box-shadow: 10px 12px 0.5rem rgba(0,0,0,0.5);
 }
 
 h2 {
     color: white;
-    
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
 h3 {
@@ -44,9 +45,6 @@ h3 {
     margin: 0 auto; 
 }
 
-legend {
-    font-size: 1.5em;
-}
 p {
     padding-top: 0;
     font-size: 1em;
@@ -126,9 +124,10 @@ input[type="submit"] {
     color: white;
     border: none;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: auto; 
     margin-bottom: 14px;
+    text-transform: uppercase; 
     cursor: pointer;
 }
 
@@ -157,6 +156,10 @@ select {
     color: gray;
 }
 
+.tagline {
+    padding-top: 30px; 
+}
+
 
 #zip {
     width: 55%
@@ -165,12 +168,10 @@ select {
 /* Footer */
 
 .copyright {
-    font-style: italic;
     text-align: center;
-    font-size: .98em;
-    color:white;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    font-size: .95em;
+    color:rgb(0, 0, 0);
+    margin-top: 15%;
 }
 
 /*Media Queries*/
@@ -190,15 +191,18 @@ form,
     margin-left: auto;
     margin-right: auto; 
 }
+
 .topsection {
 
     width:100%;
     display:block;
   
-  }
+}
+
 .container {
     max-width: 1250px; 
 }
+
 .column {
     width:100%;
     align-items: baseline;
@@ -222,7 +226,7 @@ form,
 .questionaire {
     width:30%;
     padding-top: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 
@@ -237,11 +241,9 @@ form,
 input[type="submit"] { 
     width: 100%;
 }
-
-#zip {
-    width: 35%;
-    margin-right: 37%;
-  
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
-
 }

@@ -7,6 +7,7 @@ body {
     color: rgb(0, 0, 0); 
     margin: 0 auto; 
     text-align: center; 
+    
 }
 
 header {
@@ -17,12 +18,26 @@ header {
     text-align: center; 
     font-size: 2.5em; 
 }
+.logo {
+    width: 200px; 
+    height: 200px; 
+}
 
     
 .headline {
     text-align: center; 
     color: rgb(0, 0, 0);
-    margin-bottom: 15px;
+    height: 800px; 
+    background-image:linear-gradient(65deg,
+    rgba(0, 0, 0, 0.445), 
+    #2a0add34
+  ), url(../images/pexels-sevenstorm-juhaszimrus-439391.jpg);
+    background-size: cover; 
+}
+
+.tagline {
+    color: white; 
+    font-size: 2em; 
 }
 form {
     background-color: #3F4443;
@@ -159,11 +174,6 @@ select {
     font-family:'Montserrat', sans-serif;
     color: gray;
 }
-
-.tagline {
-    padding-top: 30px; 
-}
-
 
 #zip {
     width: 55%

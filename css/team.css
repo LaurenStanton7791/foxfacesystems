@@ -4,6 +4,13 @@ body {
     background-color:#3F4443; 
     color: white; 
 }
+
+.apartment {
+  box-shadow: none; 
+  padding: none; 
+  border: none; 
+}
+
 img {
     height: 500px; 
     display: block;
@@ -28,7 +35,6 @@ h1 {
     padding: 25px 40px 40px;
     max-width: 500px;
     text-align: right;
-    background: linear-gradient(-45deg, #00A3E0 60%, #84BD00);
     color: white;
     border-bottom: 8px solid #000000;
     border-radius: 45px;
@@ -47,11 +53,10 @@ h1 {
 
   @media screen and (min-width: 768px) {
   .flex {
-    /* TWEENER - IE 10 */
-    padding-top: 200px; 
      display: inline-flex;
      max-width: 1500px;
      margin: 0 auto;
      justify-content: center;
    }
+
 }

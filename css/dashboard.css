@@ -39,6 +39,9 @@ p {
   text-align: center;
 }
 
+ul {
+  color: black;
+}
 
 
 /* Simple dashboard grid CSS */
@@ -46,7 +49,7 @@ p {
 /* Assign grid instructions to our parent grid container */
 
   
-  .header, .footer {
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;

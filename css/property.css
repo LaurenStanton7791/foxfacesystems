@@ -35,6 +35,10 @@ input {
     padding: 5px 10px;
 }
 
+.second-nav {
+  display: inline-flex;
+}
+
 
 
 /* Simple dashboard grid CSS */

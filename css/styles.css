@@ -91,7 +91,7 @@
   
   .topnav a:hover {
     background-color: rgb(145, 145, 145);
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   .active {

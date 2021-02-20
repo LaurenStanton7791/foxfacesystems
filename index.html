@@ -12,17 +12,23 @@
 </head>
 
 <body>
-<header class="main-header">
-			<div class="container">
-				<h1 class="name"><img class="img-logo" src="images/FoxFaceLogo-Recovered.png" alt="Foxface logo">Foxface Systems</h1>
-				<ul class="main-nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Resources</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-    </header>
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+    <div class="header">
+      <img class="img-logo" src="images/FoxFaceLogo-Recovered.png" class="active">
+      <h1 class="name">Foxface Systems</h1>
+    </div>
+      <div id="myLinks">
+        <a href="team.html">Team</a>
+        <a href="#">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 <div class="wrap">
     <section class="wrapper">
         <div class="background">
@@ -42,7 +48,7 @@
 
 
 
-<main class="flex">
+<main class="flex" id="info">
       <div class="card">
         <h2 class="card-title"><strong>Company info</strong></h2>
         <p class="card-info">
@@ -64,8 +70,8 @@
       </div>
 </main>
     <footer>
-
-      <p class="copyright">Copyright 2020, Foxface Systems</p>
+    <p class="copyright">Copyright 2020, Foxface Systems</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
   </html>

@@ -1,23 +1,10 @@
 body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-  
-}
-
-.header {
-display: block;
-background-attachment: fixed;
-text-align: center;
-}
-
-
-.apartment,
-.building,
-.skyscraper {
-  box-shadow: none; 
-  padding: none; 
-  border: none;  
-
+    background-color: #262B2F;
+    background-image: url(../images/Apartment\ 2.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 img {
@@ -26,6 +13,8 @@ img {
 
 h1 {
   text-transform: uppercase;
+  color: white; 
+  height: 300px;
 }
 .card {
     flex-basis: 100%;

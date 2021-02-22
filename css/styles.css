@@ -44,6 +44,7 @@
   .name {
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+    font-weight: 300;
   }
 
   .header {
@@ -188,7 +189,7 @@
     margin: 10px;
     font-size: 1.5em; 
     padding: 25px 40px 40px;
-    height: 500px; 
+    height: 300px; 
     text-align: left;
     background-color:#262B2F;
     color: rgb(255, 255, 255);
@@ -220,7 +221,7 @@
   }
 
   .fa {
-    background: #262B2F;
+    background: inherit;
     color: white;
     border-radius: 25px;
     padding: 10px 10px; 
@@ -231,6 +232,10 @@
     color: white;
     border-radius: none;
     padding: 10px 10px; 
+  }
+
+  .instagram {
+    background-color: royalblue;
   }
 
 .fa:hover {
@@ -375,6 +380,17 @@ a.social {
   .main-nav {
     float: right; 
     padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+
+  .topnav #myLinks {
+    display: flex;
+    margin-left: 1000px; 
+  }
+
+  i.fa.fa-bars {
+    display: none; 
   }
 
   .tag {

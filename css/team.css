@@ -5,7 +5,9 @@ body {
     background-image: url(../images/Apartment\ 2.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
+
 
 img {
   height: 500px; 
@@ -17,6 +19,7 @@ h1 {
   height: 300px;
 }
 .card {
+    margin-top: 50px; 
     flex-basis: 100%;
   }
 .card {

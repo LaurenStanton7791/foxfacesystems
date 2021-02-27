@@ -72,6 +72,10 @@
   .topnav #myLinks {
     display: none;
   }
+
+  i .fa.fa-bars {
+    visibility: "visible";
+  }
   
   .topnav a {
     color: white;
@@ -79,7 +83,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    display: block;
+    display: block; 
   }
   
   .topnav a.icon {
@@ -321,7 +325,7 @@ a.social {
   .name,
   .main-nav li 
   {
-    display: inline-block;
+    display: inline;
   }
 
 
@@ -373,24 +377,23 @@ a.social {
   .main-header {
     text-align: left;
     
-}
-
-
+  }
 
   .main-nav {
     float: right; 
     padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+   
   }
 
   .topnav #myLinks {
-    display: flex;
-    margin-left: 1000px; 
+   margin-left: 1000px; 
+   display: flex;
   }
 
-  i.fa.fa-bars {
-    display: none; 
+  .topnav a.icon {
+    display: none;
   }
 
   .tag {

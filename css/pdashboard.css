@@ -581,7 +581,7 @@
      }
 
     .account {
-     margin-left: 1200px;
+     margin-left: 600px;
     }
 
      h1 sup {
@@ -648,6 +648,10 @@
  /** desktop break point */
  @media (min-width: 1024px) {
      
+    .account {
+        margin-left: 1200px;
+       }
+       
      .social svg {
          height: 70px;
          width: 70px;    

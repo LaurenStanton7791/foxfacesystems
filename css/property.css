@@ -3,6 +3,7 @@ html,
 body {
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255); 
+    background-color: #262B2F;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,6 +40,69 @@ input {
   display: inline-flex;
 }
 
+.dashboard {
+  font-weight: 100;
+}
+.heading {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 1em 0 0 1em;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+
+ 
+.account {
+  text-align: center;
+  padding-top:0.25em;
+}
+.account__avatar {
+  color: white;
+  font-size: 0.875em;
+  font-weight: 500;
+  padding: 0;
+  text-transform: capitalize;    
+}
+
+.account__avatar span {
+  display: inline-block;    
+  padding: 0.5em;
+  }
+
+.account__avatar img {
+  width: 35px;
+  height: 35px;    
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+.account__notify {
+  border-right: 1px solid #00a3e0;
+  margin-right: 0.5em;
+  padding: 0.75em;
+  position: relative;
+}
+
+.account__notify img {
+  height: 20px;
+  padding: 0 0.25em;    
+  vertical-align: middle;
+}
+
+.account__notify::after {
+  background-color:#84bd00;
+  border-radius: 100%;
+  content: ' ';
+  height: 7px;
+  position: absolute;
+  right: 0.75em;
+  top: 0.75em;
+  width: 7px;
+}
 
 
 /* Simple dashboard grid CSS */
@@ -59,7 +123,6 @@ input {
     grid-area: sidenav;
     background-color: #262B2F;
   }
-
   
 
   .sidenav__list {
@@ -75,6 +138,12 @@ input {
   .sidenav__list-item:hover {
     background-color: #FFC845;
     cursor: pointer;
+  }
+
+  .sidenav__list-item:active:before {
+    background-color: #84bd00;
+    border-left: 3px;
+    border-radius: 3px;
   }
 
   .foxface-logo {
@@ -93,6 +162,14 @@ input {
     min-width: 70px;
     white-space: nowrap;
   }
+
+  .chart {
+    height: 500px; 
+  }
+
+  .chart canvas {
+    margin-top: 1em;
+}
   
   .main {
     grid-area: main;
@@ -107,16 +184,6 @@ input {
     height: 150px; /* Force our height since we don't have actual content yet */
     color: rgb(0, 0, 0);
   }
-
-  .card-bar {
-    background-color: white;
-    box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.09);
-    height: 226px;
-    margin: 0 auto;
-    width: 1526px;
-    color: black; 
-  }
-
   .overviewcard {
     align-items: center;
     justify-content: space-between;
@@ -144,7 +211,7 @@ input {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 250px; 
+    height: 450px; 
     margin-bottom: 20px;
     -webkit-column-break-inside: avoid;
     box-sizing: border-box;
@@ -163,6 +230,79 @@ input {
     padding-bottom: 20px; 
     text-align: center;
   }
+
+  .form input, .form select, .form textarea {
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    margin: 1em 0;
+    padding: 1em;
+    width: 100%;
+}
+
+  .box {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 1em 0 0 1em;
+  padding: 0;
+  text-transform: uppercase;
+  }
+
+  button {
+    background-color: #00a3e0;
+    color: white; 
+    border-radius: 5px;
+    border: 0;
+    color: #fff;
+    margin: 0;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    width: 100%;
+    width: calc(100%);
+}
+
+.message,
+.settings {
+  color: white; 
+}
+
+.chart__menu {
+  display: inline-block;
+  line-height: 1.3em;
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+}
+
+.chart__menu li {
+  display: inline-block;
+  font-size: 10px;
+  padding: 0 0.5em;
+}
+
+.chart__menu li a {
+  font-weight: 500;
+}
+
+.chart__menu li.active {
+  background-color: #84bd00;
+  border-radius: 1em;
+  font-weight: bold;
+  padding: 0 1em;
+}
+
+.chart__menu li.active a {
+  color: #fff;
+}
+
+.chart canvas {
+  margin-top: 1em;
+}
+  
 
   /* Force varying heights to simulate dynamic content */
   
@@ -223,6 +363,11 @@ input {
 /* Non-mobile styles, 750px breakpoint */
     @media only screen and (min-width: 768px) {
         /* Show the sidenav */
+
+        [class^="col-"] {
+          float: left;
+          padding: 0;
+        }
       .grid-container {
           display: grid;
           grid-template-columns: 240px 1fr;
@@ -259,6 +404,20 @@ input {
           grid-area: sidenav;
           background-color: #262B2F;
         }
+
+        .card-bar {
+          float: left;
+          margin-right: 20px;
+          margin-left: 20px;
+          width: 400px;
+        }
+
+        .col-6 {
+          width: calc(100% / 12 * 6);
+      }
+      
+        
+        
         .sidenav {
           position: relative; /* Fixed position on mobile */
           transform: translateX(0);
@@ -281,36 +440,52 @@ input {
           text-indent: 15px;
           font-size: 22px;
         }
-      
+
+        .row {
+          display: inline-flex;
+          margin: 20px 20px 20px 20px; 
+        }
+
+        .form input, .form select, .form textarea {
+          background-color: #eee;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          display: block;
+          font-family: 'Poppins', sans-serif;
+          margin: 1em 0;
+          padding: 1em;
+          width: 100%;
+        }
       }
     
       /* Medium-sized screen breakpoint (tablet, 1050px) */
       @media only screen and (min-width: 1024px) {
         /* Break out main cards into two columns */
-        .main-cards {
-          column-count: 2;
-        }
+
 
         .card {
           display: flex;
+          margin: 10px 10px 10px 10px;
         }
 
         .main-cards {
-          column-count: 2;
-          column-gap: 20px;
-          margin: 20px;
+          display: flex;
         }
 
-        .card:first-child {
-          height: 600px;
+        .card:nth-child(1) {
+          height: 500px;
+          display: block; 
+          width: 20%;
         }
       
         .card:nth-child(2) {
-          height: 600px;
+          height: 500px;
+          width: 40%;
         }
       
         .card:nth-child(3) {
-          height: 265px;
+          height: 500px;
+          width: 40%; 
         }
         
       }

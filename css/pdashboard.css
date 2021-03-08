@@ -138,7 +138,9 @@
  .sidenav {
     grid-area: sidenav;
     background-color: #262B2F;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.514), 0 0 0 1px rgb(0, 0, 0);
+    overflow-y: auto;
+    box-shadow: 0px 3px 26px rgb(0 0 0 / 45%);
+    z-index: 2;
   }
   
   .sidenav__list {
